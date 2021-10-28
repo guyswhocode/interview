@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <link rel="stylesheet" href="assets/css/style.css">  
+  <title>Interview</title>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Interview</h1>
+    
+    <div class="row">
+      <table>
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>Rating</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody class="questions-container">
+        </tbody>
+      </table>
+    </div>
+    <button onclick="showQuestionPopup()">Add Questions</button>
+  </div>
+  <div class="modal">
+    <h3>Add Question</h3>
+    <textarea class="questions" name="" rows="20"></textarea>
+    <button onclick="addQuestions()" class="add-question">Add Questions</button>
+    <button onclick="cancel()" class="button button-black button-outline cancel-question">Cancel</button>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

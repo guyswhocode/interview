@@ -1,0 +1,50 @@
+input[type='range'],
+textarea{
+  margin-bottom: 0;
+  resize: none;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.modal {
+  height: auto;
+  width: 60vw;
+  background: white;
+  border: 1px solid #666;
+  position: absolute;
+  top: calc(50% - 40vh);
+  left: calc(50% - 30vw);
+  z-index: 2;
+  border-radius: 6px;
+  padding: 20px;
+  display: none;
+}
+
+.modal .questions {
+  height: 80%;
+}
+
+.modal button {
+  margin-top: 10px;
+  margin-bottom: 0;
+  float: right;
+}
+
+.modal h3 {
+  text-align: left;
+}
+
+.add-question {
+ margin-left: 10px;
+}
+
+.session-heading {
+  margin-bottom: 0;
+}
